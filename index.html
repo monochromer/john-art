@@ -10,18 +10,20 @@
 	<meta name="keywords" content="художник, камнерез, скульптор, artist, stone, sculptor">
 	<meta name="author" content="John B.">
 	<meta name="copyright" content="John Art">
+	<link rel="icon" href="favicon.png">
 	<style>
 		html {
 			width: 100%;
 			height: 100%;
 			display: table;
 			border-collapse: collapse;
-			background: #282524;
-			color: #f2f2f2;
+			background: #202223;
+			color: #fff;
 			font-family: "Open Sans", sans-serif;
 		}
 
 		body {
+			padding: 1em 2em;
 			display: table-cell;
 			text-align: center;
 			vertical-align: middle;
@@ -40,7 +42,7 @@
 			text-transform: uppercase;
 			font-weight: 300;
 		}
-		
+
 			.header__text {
 				padding-left: 0.1875em;
 			}
@@ -76,17 +78,127 @@
 			font-size: .75em;
 			line-height: 1.5;
 		}
+
+		.logo {
+			max-width: 100%;
+			height: auto;
+			color: #fff;
+		}
+
+			.logo__letter {
+				fill: currentColor;
+				opacity: 0;
+			}
+
+			.logo__line {
+				stroke: currentColor;
+				stroke-width: 2px;
+				stroke-miterlimit: 10;
+				/* stroke-dashoffset: 0; */
+				fill: transparent;
+			}
 	</style>
 	<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic">
 </head>
 <body>
-	<h1 class="header">
-		<span class="header__text">John Art</span>
-	</h1>
+
+	<svg class="logo"
+		version="1.1"
+		xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+		x="0px" y="0px" width="976px" height="276px" viewBox="0 0 976 276">
+		<defs></defs>
+		<g id="text" transform="translate(20, 0)">
+			<path data-letter="J" class="logo__letter" d="M146.7,175.9c-2.4,0-4.4-0.4-5.9-1.1v-3.4c2,0.5,4,0.8,5.8,0.8c6.3,0,9.5-3.4,9.5-10.3v-57.5h4v57.1
+				C160.1,171.1,155.6,175.9,146.7,175.9z"/>
+			<path data-letter="O" class="logo__letter" d="M265.5,132.9c0,9.1-2.3,16.2-6.8,21.5s-10.8,7.9-18.8,7.9c-7.9,0-14.2-2.6-18.7-7.9
+				s-6.8-12.5-6.8-21.6c0-9.1,2.3-16.2,6.9-21.5c4.6-5.2,10.8-7.8,18.7-7.8c8,0,14.2,2.6,18.7,7.9
+				C263.2,116.6,265.5,123.8,265.5,132.9z M218.7,132.9c0,8.2,1.8,14.5,5.5,19c3.6,4.5,8.9,6.7,15.7,6.7c6.9,0,12.1-2.2,15.8-6.6
+				c3.6-4.4,5.4-10.8,5.4-19c0-8.2-1.8-14.5-5.4-18.9c-3.6-4.4-8.9-6.6-15.7-6.6c-6.8,0-12,2.2-15.7,6.6
+				C220.6,118.4,218.7,124.7,218.7,132.9z"/>
+			<path data-letter="H" class="logo__letter" d="M361.6,161.5h-4v-28.1h-33.4v28.1h-4v-57.1h4v25.4h33.4v-25.4h4V161.5z"/>
+			<path data-letter="N" class="logo__letter" d="M460.9,161.5h-4L423,110.8h-0.3c0.3,6,0.5,10.6,0.5,13.7v37h-3.8v-57.1h4l33.8,50.6h0.2
+				c-0.2-4.7-0.4-9.1-0.4-13.4v-37.3h3.9V161.5z"/>
+			<path data-letter="A" class="logo__letter" d="M608.5,141.4h-23.2l-8,20.2h-4.4l23-57.3h2.5l22.5,57.3h-4.5L608.5,141.4z M586.8,137.8h20.4
+				l-7.8-20.6c-0.7-1.6-1.4-3.9-2.3-6.7c-0.7,2.5-1.5,4.8-2.3,6.8L586.8,137.8z"/>
+			<path data-letter="R" class="logo__letter" d="M674.6,136.6v24.9h-4v-57.1h13.6c7.1,0,12.3,1.3,15.7,3.9c3.4,2.6,5.1,6.6,5.1,11.8
+				c0,3.8-1,7.1-3,9.7c-2,2.6-5.1,4.5-9.2,5.7l15.5,26h-4.8l-14.7-24.9H674.6z M674.6,133.2h10.9c4.8,0,8.6-1.1,11.2-3.2s4-5.3,4-9.5
+				c0-4.3-1.3-7.5-3.9-9.5c-2.6-2-6.8-3-12.7-3h-9.5V133.2z"/>
+			<path data-letter="T" class="logo__letter" d="M774.6,161.5h-4v-53.4h-18.6v-3.8h41.1v3.8h-18.6V161.5z"/>
+		</g>
+		<!-- <rect class="logo__line" x="1" y="1" width="974" height="274" /> -->
+		<path class="logo__line" d="M 1 1 h 974 v 274 h -974 v -274"/>
+	</svg>
+
+
 	<aside class="dev-stub">
 		<div>сайт в разработке</div>
 		<div>under development</div>
 	</aside>
+
 	<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter39062730 = new Ya.Metrika({ id:39062730, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/39062730" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+	<!-- KUTE.js  -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/1.6.2/kute.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/1.6.2/kute-svg.min.js"></script>
+	<script>
+		;(function() {
+			function $$(selector) {
+				return Array.prototype.slice.call(selector);
+			}
+
+			function timeline(tweens) {
+				return tweens.reduce(function(acc, cur) {
+					return acc.chain(cur);
+				});
+			}
+
+			var lineTween = KUTE.fromTo('.logo__line',
+				{ draw: '0% 0%' },
+				{ draw: '0% 100%' },
+				{ easing: 'easingCubicOut', duration: 1200 }
+			);
+
+			var lettersTween = KUTE.allFromTo('.logo__letter',
+				{ svgTransform: { translate: [0, -80] }, opacity: 0 },
+				{ svgTransform: { translate: [0, 0] }, opacity: 1 },
+				{ duration: 280, offset: 100, easing: 'easingCubicInOut' }
+			);
+
+			timeline([lettersTween, lineTween]).start();
+		})();
+	</script> -->
+
+	<!-- anime.js  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+	<script>
+		var ns = 'http://www.w3.org/2000/svg';
+		var line = document.querySelector('.logo__line');
+		// line.setAttributeNS(ns, 'stroke-opacity', 0);
+		line.style.strokeOpacity = 0;
+
+		;(function() {
+			var tl = anime.timeline();
+			tl.add({
+				targets: '.logo__letter',
+				opacity: [0, 1],
+				translateY: [-60, 0],
+				elasticity: 0,
+				delay: function(el, i, l) {
+					return i * 120;
+				}
+			}).add({
+				targets: '.logo__line',
+				strokeDashoffset: [anime.setDashoffset, 0],
+				easing: [0.78, 0, 0.23, 1],
+				duration: 1200,
+				begin: function(anim) {
+					// anim.animatables[0].target.style.strokeOpacity = 1;
+					// line.setAttributeNS(ns, 'stroke-opacity', 1);
+					line.style.strokeOpacity = 1;
+				},
+				offset: '-=1000'
+			})
+		})();
+	</script>
 </body>
 </html>
