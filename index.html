@@ -176,7 +176,7 @@
 		// line.setAttributeNS(ns, 'stroke-opacity', 0);
 		line.style.strokeOpacity = 0;
 
-		;(function() {
+		function onLoad() {
 			var tl = anime.timeline();
 			tl.add({
 				targets: '.logo__letter',
@@ -197,8 +197,11 @@
 					line.style.strokeOpacity = 1;
 				},
 				offset: '-=1000'
-			})
-		})();
+			});
+		}
+
+		window.addEventListener('load', onLoad);
+
 	</script>
 </body>
 </html>
