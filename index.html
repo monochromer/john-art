@@ -91,10 +91,10 @@
 			}
 
 			.logo__line {
+				opacity: 0;
 				stroke: currentColor;
 				stroke-width: 2px;
 				stroke-miterlimit: 10;
-				/* stroke-dashoffset: 0; */
 				fill: transparent;
 			}
 	</style>
@@ -171,13 +171,11 @@
 	<!-- anime.js  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
 	<script>
-		var ns = 'http://www.w3.org/2000/svg';
 		var line = document.querySelector('.logo__line');
-		// line.setAttributeNS(ns, 'stroke-opacity', 0);
-		line.style.strokeOpacity = 0;
 
 		function onLoad() {
 			var tl = anime.timeline();
+
 			tl.add({
 				targets: '.logo__letter',
 				opacity: [0, 1],
@@ -192,9 +190,7 @@
 				easing: [0.78, 0, 0.23, 1],
 				duration: 1200,
 				begin: function(anim) {
-					// anim.animatables[0].target.style.strokeOpacity = 1;
-					// line.setAttributeNS(ns, 'stroke-opacity', 1);
-					line.style.strokeOpacity = 1;
+					line.style.opacity = 1;
 				},
 				offset: '-=1000'
 			});
